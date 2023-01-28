@@ -46,7 +46,7 @@ class AddNote : AppCompatActivity() {
                 Log.i(TAG,"$title , $note , ${formatter.format(Date())}")
                 val intent = Intent()
                 intent.putExtra("note",newNote)
-                setResult(Activity.RESULT_OK)
+                setResult(Activity.RESULT_OK,intent)
                 finish()
             }
             else{
